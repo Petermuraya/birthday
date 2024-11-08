@@ -1,0 +1,158 @@
+/* Keyframes for gradient animation */
+@keyframes gradientAnimation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+/* Animated gradient background */
+.animate-gradientBackground {
+  animation: gradientAnimation 15s ease infinite;
+  background-size: 400% 400%;
+  background: linear-gradient(to right, #00c6ff, #0072ff, #5b86e5, #8e44ad);
+}
+
+/* Basic font styles */
+body {
+  font-family: 'Arial', sans-serif;
+}
+
+/* Home page container */
+.home-container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem;
+  overflow: hidden;
+  position: relative;
+}
+
+/* Section styles */
+section {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+  width: 100%;
+  max-width: 600px;
+  text-align: center;
+}
+
+/* Button styles */
+button {
+  padding: 12px 24px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+/* Textarea styles */
+textarea {
+  width: 100%;
+  padding: 12px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+  margin-bottom: 10px;
+  resize: none;
+}
+
+textarea:focus {
+  outline: none;
+  border-color: #4CAF50;
+}
+
+/* Heading styles */
+h1, h2 {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 1rem;
+}
+
+/* Loading and error message styles */
+.text-lg {
+  font-size: 1.125rem;
+}
+
+.text-gray-700 {
+  color: #4a4a4a;
+}
+
+.text-red-500 {
+  color: #f44336;
+}
+
+.text-green-600 {
+  color: #16a34a;
+}
+
+/* Confetti container */
+.confetti-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 10;
+}
+
+/* Balloons */
+.balloon {
+  position: absolute;
+  bottom: -50px;
+  width: 20px;
+  height: 30px;
+  background: radial-gradient(circle, #ff4e50, #f9d423);
+  border-radius: 50%;
+  animation: float 5s linear infinite;
+  opacity: 0.7;
+}
+
+.balloon-1 {
+  left: 20%;
+  animation-duration: 6s;
+  background: radial-gradient(circle, #ff4e50, #ff9a9e);
+}
+
+.balloon-2 {
+  left: 40%;
+  animation-duration: 4s;
+  background: radial-gradient(circle, #fcb69f, #ff4e50);
+}
+
+.balloon-3 {
+  left: 60%;
+  animation-duration: 8s;
+  background: radial-gradient(circle, #ff9a9e, #f6d365);
+}
+
+.balloon-4 {
+  left: 80%;
+  animation-duration: 5s;
+  background: radial-gradient(circle, #84fab0, #8fd3f4);
+}
+
+@keyframes float {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-100vh);
+  }
+}
